@@ -14,6 +14,7 @@ const Home=()=>{
         const data= await res.json();
 
         setTopMovies(data.results);
+        console.log(data)
     };
 
     useEffect(()=>{

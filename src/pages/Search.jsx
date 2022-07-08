@@ -10,8 +10,7 @@ import "./MovieGrid.css";
 const Search=()=>{
     const [searchParams]=useSearchParams();
     const [movies,setMovies]=useState([])
-    const query=searchParams.get("q")
-
+    const query=searchParams.get("q")                
     const getSearchdMovies=async(url)=>{
         const res=await fetch(url)
         const data=await res.json();
